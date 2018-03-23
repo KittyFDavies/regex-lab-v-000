@@ -23,7 +23,9 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   elsif text.grep(/^[a-z].*[^a-zA-z1-9]$/)
     false
   elsif text.grep(/^[A-Z].*[a-zA-z1-9]$/)
-    
+    false
+  else
+    false
   end
 end
 
