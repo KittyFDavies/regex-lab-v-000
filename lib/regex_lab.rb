@@ -27,7 +27,7 @@ end
 def valid_phone_number?(phone)
   phone = phone.split(" ")
   phone.each do |number|
-    if number.match(/(\d\D*)(\d\D*)(\d\D*)(\d\D*)(\d\D*)(\d\D*)(\d\D*)(\d\D*)(\d\D*)(\d\D*)/)
+    if number.match(/^(\d{1}\D*){10}$/)
       true
     else
       false
